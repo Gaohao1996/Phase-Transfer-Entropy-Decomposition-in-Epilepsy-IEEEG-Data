@@ -1,1 +1,1 @@
-# Information-dynamics-in-Epilepsy-network
+# Phase Transfer entropy decomposition in epilepsy IEEEG data
