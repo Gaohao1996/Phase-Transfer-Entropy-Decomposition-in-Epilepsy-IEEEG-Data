@@ -1,7 +1,7 @@
 # Phase Transfer Entropy (TE) Decomposition in Epilepsy IEEEG Data
 
 Functions for calculating TE Decomposition in IEEG data to find the redundant and synergistic paths beween certain source and target variables. The dictionary 
-`PLV Functional Network` is used to visualize the functional network of the data based on their PLV values and do some analyses. The dataset used here is from [Statistical Analysis of Network Data](https://math.bu.edu/people/kolaczyk/datasets.html). Some of data has been preprocessed ( these can be identified in the `.mat` file which are), like removing the noise power frequency and the noise component from ICA ( only for seizure 1).  
+`PLV Functional Network` is used to visualize the functional network of the data based on their PLV values and do some analyses. The dataset used here is from [Statistical Analysis of Network Data](https://math.bu.edu/people/kolaczyk/datasets.html). Some of the data have been preprocessed through removing the noise power frequency and the noise component from ICA ( only do ICA for seizure 1), which can be identied in the name of the variable in `.mat` files ( clean or raw data).  
 
 ## Transfer Entropy Decomposition
 The main script `EZ_TEdecom` contains：
