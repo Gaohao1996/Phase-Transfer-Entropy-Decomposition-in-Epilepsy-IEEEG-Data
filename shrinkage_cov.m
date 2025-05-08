@@ -3,7 +3,7 @@ function Sigma_shrink = shrinkage_cov(X)
     [N, d] = size(X);
     mu = mean(X, 1);
     Xc = X - mu;
-    S = (Xc' * Xc) / (N - 1);  
+    S = (Xc' * Xc) / (N - 1);  % 样本协方差
 
     % Shrinkage target: scaled identity matrix
     var_avg = trace(S) / d;
