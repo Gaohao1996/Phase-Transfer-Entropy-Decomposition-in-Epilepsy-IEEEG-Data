@@ -51,17 +51,9 @@ end
 
 % joint variable
 xyz = [x y z];
-% Cxyz = shrinkage_cov(xyz);
-
-% % choose if need to use shrinkage cov when the dimension of conditioned variable is too high
-% if size(xyz,2) > 20  % 
-% Cxyz = shrinkage_cov(xyz);
-% else
 Cxyz = (xyz'*xyz) / (Ntrl - 1);
-% end
+% Cxyz = shrinkage_cov(xyz); %use this when covariance matrix is ill connditioned
 
-% xyz = [x y z];
-% Cxyz = (xyz'*xyz) / (Ntrl - 1);
 
 % submatrices of joint covariance
 Nvaryz = Nvary + Nvarz;
