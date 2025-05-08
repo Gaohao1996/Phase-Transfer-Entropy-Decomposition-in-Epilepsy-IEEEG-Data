@@ -6,14 +6,11 @@ for dr=condition_index% 3:kmax+2
     xx=x(:,drivers_red(1:dr-1));
     for k=1:nsurr
         ys=surr_iaafft(x(:,drivers_red(dr)));
-%         disp(std(ys))  % 看一下是否是常数
         xx(:,dr)=ys;
         xxx=xx;
         gc=CTE_iteration(xxx,p,d,souce_index,target_index);
-%         disp(gc);
         Gs=mean(gc);
         gc_red_surr(k,dr)=Gs;
-%         disp(gc_red_surr(k,dr));
     end
 end
 
