@@ -5,7 +5,7 @@ Functions for calculating TE Decomposition in IEEG data to find the redundant an
 
 ## Transfer Entropy Decomposition
 The main script `EZ_TEdecom` contains：
-1) Oscillation filtered from data via FIR filters, i.e., Delta, Theta, Alpha, Beta.
+1) Oscillations filtered from data via FIR filters, i.e., Delta, Theta, Alpha, Beta.
 2) Time-frequecy power analyses (Short-time fourier tranfermation, STFT) to discover the potential EZ zone.
 3) TE decompostion on Phase data. For setting the parameter of model order and delay in TE calculation, Akaike Information Criterion (AIC) is used here.
    
